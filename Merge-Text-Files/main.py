@@ -1,3 +1,5 @@
+# This code is part of exercises from the Automate Everything with Python by Ardit Sulce.
+
 # Import the Path class from the pathlib module for handling filesystem paths
 from pathlib import Path
 
