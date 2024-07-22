@@ -12,5 +12,6 @@ Welcome to the SimpleTaskScripts repository! This collection of Python scripts i
 
 # Acknowledgements
 
-This code was developed as part of the Automate Everything with Python taught by Ardit Sulce. Special thanks to Ardit for their guidance and materials.
+This code was developed as part of the Automate Everything with Python taught by Ardit Sulce at Udemy. Special thanks to Ardit for their guidance and materials.
+[https://www.udemy.com/course/automate-everything-with-python/]
 
