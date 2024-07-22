@@ -12,5 +12,5 @@ Welcome to the TaskAutomator repository! This collection of Python scripts is de
 
 # Acknowledgements
 
-This code was developed as part of the Automate Everything with Python taught by Ardit Sulce . Special thanks to Ardit for their guidance and materials.
+This code was developed as part of the Automate Everything with Python taught by Ardit Sulce. Special thanks to Ardit for their guidance and materials.
 
