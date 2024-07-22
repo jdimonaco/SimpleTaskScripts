@@ -1,6 +1,6 @@
 # SimpleTaskScripts
 
-Welcome to the TaskAutomator repository! This collection of Python scripts is designed to automate simple, repetitive tasks at work, boosting your productivity and efficiency. Each script is standalone and can be used independently to address specific needs.
+Welcome to the SimpleTaskScripts repository! This collection of Python scripts is designed to automate simple, repetitive tasks at work, boosting your productivity and efficiency. Each script is standalone and can be used independently to address specific needs.
 
 
 # Features
