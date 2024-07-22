@@ -5,7 +5,7 @@ Welcome to the TaskAutomator repository! This collection of Python scripts is de
 
 # Features
 
--Automate routine tasks: Save time and reduce errors by automating mundane tasks.
--Easy to use: Each script is designed to be user-friendly with clear instructions.
--Customizable: Modify scripts to suit your specific workflow and requirements.
--Diverse range of tasks: Scripts cover a wide variety of common tasks, from data processing to file management.
+- Automate routine tasks: Save time and reduce errors by automating mundane tasks.
+- Easy to use: Each script is designed to be user-friendly with clear instructions.
+- Customizable: Modify scripts to suit your specific workflow and requirements.
+- Diverse range of tasks: Scripts cover a wide variety of common tasks, from data processing to file management.
