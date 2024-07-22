@@ -9,3 +9,8 @@ Welcome to the TaskAutomator repository! This collection of Python scripts is de
 - Easy to use: Each script is designed to be user-friendly with clear instructions.
 - Customizable: Modify scripts to suit your specific workflow and requirements.
 - Diverse range of tasks: Scripts cover a wide variety of common tasks, from data processing to file management.
+
+# Acknowledgements
+
+This code was developed as part of the Automate Everything with Python taught by Ardit Sulce . Special thanks to Ardit for their guidance and materials.
+
