@@ -1,11 +1,15 @@
 # This code is part of exercises from the Automate Everything with Python by Ardit Sulce.
 # Course URL: https://www.udemy.com/course/automate-everything-with-python/
 
-from filestack import Client
 
-api_key = "AViVqp7suSQWWEdrl6hf9z"
+# Define your Filestack API key
+api_key = "YOUR API KEY"
 
-client = Client(api_key)
-new_link = client.upload(filepath='file.txt')
+# Initialize the Filestack client with your API key
+filestack_client = Client(api_key)
 
-print(new_link.url)
+# Upload the specified file and get the new link
+uploaded_file = filestack_client.upload(filepath='file.txt')
+
+# Print the URL of the uploaded file
+print(uploaded_file.url)
