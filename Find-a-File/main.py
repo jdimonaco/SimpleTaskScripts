@@ -4,18 +4,19 @@
 # Import the Path class from the pathlib module to handle filesystem paths
 from pathlib import Path
 
-# Create a Path object pointing to the current directory.
-root_dir = Path('.')
-# Define the search term to look for in filenames
-search_term = '14'
+# Creating a Path object for the current working directory
+current_dir = Path('.')
+# Set the search keyword for filenames
+keyword = '14'
 
-# Iterate over all files and directories 
-for path in root_dir.rglob("*"):
-  # Check if the current path is a file (not a directory)
-  if path.is_file():
-    # Check if the search term is present in the filename
-    if search_term in path.stem:
-      print(path.absolute())
+# Loop through all files and directories recursively
+for item in current_dir.rglob("*"):
+    # Verify if the current item is a file
+    if item.is_file():
+        # Check if the filename contains the specified keyword
+        if keyword in item.stem:
+            print(item.resolve())
+
 
 
 
