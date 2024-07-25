@@ -4,23 +4,22 @@
 # Import the Path class from the pathlib module for handling filesystem paths
 from pathlib import Path
 
-
 # Create a Path object representing the directory 'files'
-root_dir = Path('files')
+directory = Path('files')
 
-# nterate through the files and directories in 'root_dir'
-file_paths = root_dir.iterdir()
+# Print the current working directory
 print(Path.cwd())
 
-# Iterate over each path object in the 'file_paths' iterator
-for path in file_paths:
-  # Create a new filename object by adding "new-" in front of the original name while keeping the original file extension unchanged.
-  new_filename = "new-" + path.stem + path.suffix
-  # Create a new Path object with the updated filename
-  new_filepath = path.with_name(new_filename)
-  print(new_filepath)
-   # Rename the original file to the new file path
-  path.rename(new_filepath)
+# Iterate through the files and directories in 'directory'
+for file in directory.iterdir():
+    # Create a new filename by prefixing "new-" to the original name while keeping the file extension unchanged
+    new_name = "new-" + file.stem + file.suffix
+    # Create a new Path object with the updated filename
+    new_path = file.with_name(new_name)
+    print(new_path)
+    # Rename the original file to the new file path
+    file.rename(new_path)
+
   
 
 
