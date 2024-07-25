@@ -4,16 +4,17 @@
 # Import the Path class from the pathlib module for handling filesystem paths
 from pathlib import Path
 
-# Define the directory containing the files to be merged
-files_dir = Path('files')
+# Specify the directory containing the files to be merged
+directory = Path('files')
 
-# # Initialise an empty string to store the merged content
-merged = ''
-for filepath in files_dir.iterdir():
-  with open(filepath, 'r') as file:
-    content = file.read()
-  merged = merged+ content + '\n'
+# Initialize a variable to store the combined content
+combined_content = ''
+for file_path in directory.iterdir():
+    with open(file_path, 'r') as f:
+        file_content = f.read()
+    combined_content += file_content + '\n'
 
-# Open a new file (or overwrite if it exists) named 'merged.csv' in write mode
-with open('merged.csv', 'w') as file:
-  file.write(merged)
+# Create (or overwrite) a file named 'merged.csv' and write the combined content to it
+with open('merged.csv', 'w') as output_file:
+    output_file.write(combined_content)
+
