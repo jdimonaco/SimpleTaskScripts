@@ -3,10 +3,13 @@
 
 import requests
 
-url = "https://cgi-lib.berkeley.edu/ex/fup.cgi"
+# URL to which the file will be uploaded
+upload_url = "https://cgi-lib.berkeley.edu/ex/fup.cgi"
 
-file = open('myfile.txt', 'rb')
+# Open the file in binary read mode
+with open('myfile.txt', 'rb') as file_to_upload:
+    # Send a POST request with the file
+    response = requests.post(upload_url, files={"upfile": file_to_upload})
 
-req = requests.post(url, files={"upfile":file})
-
-print(req.text)
+# Print the server's response text
+print(response.text)
