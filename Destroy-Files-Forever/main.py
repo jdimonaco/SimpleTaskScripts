@@ -3,9 +3,13 @@
 
 from pathlib import Path
 
-root_dir = Path('destination')
+# Defining the root directory containing the CSV files
+directory = Path('destination')
 
-for path in root_dir.glob("*.csv"):
-  with open(path, 'wb') as file:
-    file.write(b'')
-  path.unlink()
+# Iterate over all CSV files in the directory
+for csv_file in directory.glob('*.csv'):
+    # Open each file in binary write mode and immediately close it to clear the content
+    with open(csv_file, 'wb'):
+        pass
+    # Delete the empty file
+    csv_file.unlink()
